@@ -23,12 +23,13 @@ int main(void)
 
     printf("enter step value ");
     scanf("%lf", &step);
-    printf("Celsius         Fahrenheit");
-    for (int i = start; i <= stop; i += step)
+    printf("Celsius         Fahrenheit\n");
+    for (c = start; c <= stop; c += step)
     {
 
         f = (c * 1.8) + 32;
-        printf("%8.2lf %8.2lf", c, f);
+        printf("%8.2lf %8.2lf\n", c, f);
+        //printf("%-8.2lf %8.2lf\n", c, f);
     }
 
     return 0;
